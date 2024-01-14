@@ -58,10 +58,10 @@ was the actual last step of development, before the distance calculation was run
 <br>
 
 Best Case: 
-- Audio Out Per Grain Function working i a clean way of making the synthesis engine outputting each grain to a dedicated fixed audio channel instead of mixing them together
-
+- Audio Out Per Grain Function working in a clean way of making the synthesis engine outputting each grain to a dedicated fixed audio channel instead of mixing them together / trying to separate them post mix 
+- Switch between one Sample for All & individual Sample for All in VST ui
 
 Worst Case: 
-- Audio Out Per Grain Function in a hacky way, that gives at least an impression of how it might sound like with spatially different displaced grains
-
+- Audio Out Per Grain Function in a hacky-post-mix-separation way, that gives at least an impression of how it might sound like with spatially different displaced grains
+- 2 versions - one Sample for all Voices Version, Individual Samples for all Vocies Version
 
