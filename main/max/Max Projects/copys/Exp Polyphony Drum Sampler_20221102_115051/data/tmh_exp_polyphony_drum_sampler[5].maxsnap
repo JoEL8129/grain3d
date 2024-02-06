@@ -1,0 +1,312 @@
+{
+	"filetype" : "C74Snapshot",
+	"version" : 2,
+	"minorversion" : 0,
+	"name" : "tmh_exp_polyphony_drum_sampler[5]",
+	"origin" : "482ba527-1ef6-11eb-a527-acde48001122",
+	"type" : "rnbo",
+	"subtype" : "",
+	"embed" : 1,
+	"snapshot" : 	{
+		"__sps" : 		{
+			"smp[1]" : [ 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+, 				{
+
+				}
+ ]
+		}
+,
+		"speed_idx24" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx23" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx22" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx20" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx19" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx18" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx16" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx15" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx1" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_samp4" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_samp2" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_samp1" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx9" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx8" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx5" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx17" : 		{
+			"value" : 1.0
+		}
+,
+		"smp_select" : 		{
+			"value" : 0.0
+		}
+,
+		"speed_idx10" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_samp5" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx2" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx14" : 		{
+			"value" : 1.0
+		}
+,
+		"__presetid" : "482ba527-1ef6-11eb-a527-acde48001122",
+		"speed_idx21" : 		{
+			"value" : 1.0
+		}
+,
+		"audio_rte" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx13" : 		{
+			"value" : 1.0
+		}
+,
+		"rate" : 		{
+			"value" : 16.0
+		}
+,
+		"speed_idx12" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx4" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx7" : 		{
+			"value" : 1.0
+		}
+,
+		"audio_play" : 		{
+			"value" : 0.0
+		}
+,
+		"speed_idx6" : 		{
+			"value" : 1.0
+		}
+,
+		"play" : 		{
+			"value" : 0.0
+		}
+,
+		"speed_samp3" : 		{
+			"value" : 1.0
+		}
+,
+		"smp" : 		{
+			"value" : 4.0
+		}
+,
+		"speed_idx11" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_samp6" : 		{
+			"value" : 1.0
+		}
+,
+		"speed_idx3" : 		{
+			"value" : 1.0
+		}
+
+	}
+
+}
