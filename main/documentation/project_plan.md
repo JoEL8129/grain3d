@@ -1,6 +1,6 @@
 # Project Plan - grain3d
 
-<img src='../documentation/88Speakers8Sources.gif' width='600'>
+<img src='./gif/88Speakers8Sources.gif' width='600'>
 
 
 
@@ -28,9 +28,7 @@ The audio rendering system is entirely written and implemented in TouchDesigner.
 To give a rough description, its a distance based amplitude panning system which works dynamically with any amount of speakers & sound sources. It takes the speaker positions as a csv table & the sound source positions as texture object since the calculation of the distances of each sound source positions to each speaker is allocated to the GPU via a GLSL compute shader. 
 
 Optimization 
-was the actual last step of development, before the distance calculation was running entirely on the CPU via a python script. I made some performance test on my Laptop Graphics "Card" RTX 3060 and 88 Speaker Positions with 8 Sound Sources, and the system was still performing ok but somewhere around 100 audio channels seems to be the limit. (for a Low End Gaming Laptop!) As for now the systems seem pretty stable and definitely scalable enough. Still: there are some minor bottlenecks left which could be optimized in further development. (s. Nice To Haves)
-
-
+was the actual last step of development, before the distance calculation was running entirely on the CPU via a python script. I made some performance test on my Laptop Graphics "Card" RTX 3060 and 88 Speaker Positions with 8 Sound Sources, and the system was still performing ok but somewhere around 100 audio channels seems to be the limit. (for a Low End Gaming Laptop!) As for now the systems seem pretty stable and definitely scalable enough. Still: there are some minor bottlenecks left which could be optimized in further development. 
 
 ### 3. GPU Particle System 
 
