@@ -2,7 +2,7 @@
 
 ## Initial Idea 
 
-The description of the initial Idea can be found [here](./media/Orientierungsprojekt.pdf).  
+The description of the initial Idea can be found [here](./../documentation/pdf/Orientierungsprojekt.pdf).  
 
 ## Concept
 
@@ -31,6 +31,7 @@ This Section is really self-explanatory. There is:
 - "Delete Preset" Button
 - "Load Preset" Dropdown Menu 
 - FPS Monitor 
+- "Binaural Listening" Button
 
 ### <ins>Soundpartikel Section</ins>
 <img  src='./../documentation/img/13.png' height='400'>
@@ -120,6 +121,7 @@ This section holds mutiple menus:
 In this Menu Pages all of the relevant global particles functions are controlled.
 
 Available Forces: 
+- Force Towards Init Position ("TowardsInit")
 - Curl Noise 
 - Attraction
 - ConformToSphere 
@@ -197,7 +199,7 @@ The third approach i tried out was to just use the RNBO Object "Granulator". As 
 
 
 
-As stated already under "Concept", the initial idea was to make a real spatial granular synth, what means that each grain contains spatial information. Through a false assumption in the beginning, i believed that its not possible with all of the named Techniques. Much later I realized that with Technique 1. & 2. it's really much possible, the problem I was encountering was about triggering the grains not about accessing the single grain audio buffers. However, I was so far with the development of the spatial granular streams approach that i decided to stick with it for the First Term Project. And follow the actual spatial grains approach in further development. 
+As stated already under "Concept", the initial idea was to make a real spatial granular synth, what means that each grain contains spatial information. Through a false assumption in the beginning, i believed that its not possible with all of the named Techniques. Much later I realized that with Technique 1. & 2. & maybe Tech 3 it's really much possible, the problem I was encountering was about triggering the grains not about accessing the single grain audio buffers. However, I was so far with the development of the spatial voices / granular streams approach that i decided to stick with it for the First Term Project. And follow the actual spatial grains approach in further development. 
 
 
 
@@ -209,7 +211,7 @@ As stated already under "Concept", the initial idea was to make a real spatial g
 
 This component is a Particle System fully implemented in TouchDesigner on a GLSL Compute Shader. I developed it from scratch as personal project over the last 1-2 years. I could just use it in the way that i stream particle positions (and other attributes) out of the component as a texture, which then got fed into the input of the Audio Rendering System.
 
-So a lot of work in this section was already done when i started this project. However, during the semester i rewrote & added some functions. The TouchDesigner/GLSL Workshop by Josef Pelz during the semester was more then helpful for that.
+So a lot of work in this section was already done when i started this project. However, during the semester i rewrote & added some functions. I also threw some stuff out, tried to make it more readable / cleaned up (there can be done a lot more, lot of unused junk functions in the code), nevertheless it's still a separate version, that grew out of the initial work in the last months. The file can be found [here](./../td/tox/Particle_System.tox) & the GLSL Main Code [here](./../glsl/compute_main_particle_system.glsl).
 
 Later in the work on this project i added some more outputs to get more particle attributes for using them as modulation sources like the velocity, life or rotation. I also added some functions, like the "Circular Force" Function or the Trail Function. 
 
@@ -237,8 +239,75 @@ Falloff / Attenuation Curves Per Sound Source
 Optimization
 was the actual last step of development. As already mentioned, initially the distance calculation was running entirely on the CPU via a python script. In the project week, I rewrote the functionality on a GLSL compute shader, that made it it much faster. 
 
-## Process of Development
+---
 
 
+## Work Process & Reflection
 
-## Conclusion
+I started in october. Only with audio related stuff. The whole Audio Synthesis Work documented here was done somewhen in november I think, not the export VST / conversion to RNBO tho. Then, till christmas, a lot of sidework was done (TI Course, XR Course, GLSL/TouchDesigner Workshop, personal projects). I call it sidework, as it later turned out to be really useful for this project aswell, if not directly through code then indirectly through working in same environments. In the example of TI, some of the code/tools written in that context i could one to one use in this project ([Handtracking Data Selector](./../td/tox/select_hand.tox), [Attribute Bake To Texture Tool](./../houdini/hda_tools/houdini20/sop_js812.dev.Attribute_Bake_To_Texture.1.0.hdalc)). In XR & the TouchDesigner Workshops it was more the case that I learned things there, which I applied in this project. 
+
+In the project week I was super productive. At least 45 hours of work were put into this project in it. I managed to convert my max patches to RNBO Patches and then to VST3 Instruments i could successfully use in TouchDesigner. I wrote the complete Audio Rendering System in this week (s.Audio Rendering System) & managed to optimize it in a way that the heavy computation is entirely running on the GPU. Much time went into making this component completely dynamic, which means that it theoretically works for any number of sound sources and any number of speakers, and that it automatically reconfigures itself by just plugging in more audio sources or more speakers in the speaker table. 
+
+Some weeks later, i started working on the whole UI & Modulation System. In the end, i reworked the UI constantly and implemented the Preset System aswell as the Interaction System. I tried to continue to work with tables & that style of programming that everything is dynamicly reacting onto changes on these tables or to relevant changes in the incoming data structure. For example the preset / save system aswell as the modulation system took quite a lot of work to implement but now are super fastly reconfigurable by just adding a parameter name in a table and streaming the data of the parameter having that name into the system. Same goes for the UI, it just looks onto these tables and when it detects a change there it updates itself. The whole UI Update / Callback Function writing took me a lot of time (&nerves) aswell, but was worth it. However i got the feeling i might have done things to complicated or being too chaotic with the the rules on which level a preset callback script is laying. Regarding UI, the style of building small modules that combine into bigger (s.Soundpartikel Section in UI / Overview) i consdier really useful, because when i want to extend the system, for example when adding another synth engine that has more then 4 parameters per voice, it would work extremely fast to implemnt this change with the Instancing-Way the UI is visually & logically built. What i didn't managed on the crucial UI Part, the Soundpartikel Section, is the separation of the Modulation Calculations from the UI Objects that didn't need to be updated as much as the Modulation Functions. With some parts of the UI i managed to do that (Interface Menus) & and have the UI Container only stream out&in data when its updated. But for the Soundpartikel Sectrion a big update is needed in the future. Also the preset / save system needs to be implemented in a more unified way & maybe also on a higher level than now. That is because its also sitting inside the Main UI Container, which is ok in the sense that it is still only updated when certain UI Events occur but as there might be more parameters to save then only the ones of UI Objects it means that an additional data stream into the Main UI Container is needed.
+
+In the last week before the final deadline, i made quite a lot of test with 4 speakers in the Spatial Audio Lab & on headphones (binaural listening), some parts of that can be seen/heard in the video linked under Example Links at the end of this site. 
+
+Thinking of my [Project Plan](./../documentation/project_plan.md) i guess im somewhere between best & worst case scenario, but i feel like im closer to the best case scenario, tho i objectively may be pretty much in the middle between both. However, personally, I'm very happy with the state of the project and I'm really much looking forward to extending it in the future.
+
+Therefore, some Ideas / Todos / Todofurthers at the end: 
+
+- Motion Player System
+    - Implementation Houdini <-> TouchDesigner Pipeline
+    - Multiple Ways to apply baked motion onto particles (force, direct position transfer)
+
+- Particle System
+    - Set Parameter Ranges better (eg. circular or attraction force strenghts) / Add Exponential Value Curve for some
+    - Clean Up Code
+    - Per Particle Attributes & simple Genetic Algorithms<br>
+        -> going towards Autonomous Agent Simulation<br>
+        -> going towards Artificial Life Simulation<br>
+    - Physical Simulations (Gravity Force, Springs)
+
+
+- UI Improvements
+    - Work on the Visual Arrangement
+    - "Activate Global Audio Output" Button
+    - "Select Global Audio Output Device" Dropdownmenu
+    - "Load Audio Samples" Button
+    - Monitor Selected Audio Sample per Voice
+    - Activate handtracking Input / Switch Between Recordings and Live Input / Recordings Selector
+    - The whole of the Interaction Menus are too small, they could be merged into a big Modulation Section 
+    - The Modulation Section should be switchable with the Soundpartikel Section (same size, ergo much bigger)
+    - encapsoulate Modulation Computation from Soundpartikel UI, general clean separation between UI & any computation
+
+- Modulation System
+    - Add Classic Modulation Signal Generators (LFOs + ADSR Envelopes)
+    - Find Easy Way to apply Modulation to Global Parameters (especially global particle parameters)
+
+- Multiple Spatial Granular Synth Approaches:
+    - Spatial Voices (Now)
+    - Spatial Grains (Tech 1. -> No VST, But Synth in Max in Background)
+
+- Multiple Audio Engines:
+    - DBAP Audio Renderer (TouchDesigner)
+    - "spat." Audio Renderer (Max)
+ 
+- OSC Interfaces
+    - UI Data to Max
+    - Particle / Distance Data to Max
+    - Preset Data To Max
+    - All the Data from Max back to TouchDesigner 
+
+- Preset Interpolator 
+    - Multi Layered Perceptron Regression Tech, between N Presets in 3D, using Flucoma Library in Max, Proof of Concept Patch can be found [here](./../max/nnparms3D.maxpat)
+    - first test implementation in TouchDesigner with small OSC Interface can be found [here](./../td/tox/Parameter_Projection_3D.tox)
+    - Linear Interpolation between 2 Presets, everything (preset1, preset2, lerp_value) should be able to be modulated 
+
+## Example Links 
+
+[Usecase Recording](https://youtu.be/aX2tZQe-OFI) (Version 12.03)
+
+Follow Soon: 
+
+[Tutorial](https://therewillbeareallinksoon.com) - How to use grain3d - <br>
+[Usecase Recording](https://therewillbeareallinksoon.com) (Version 15.03) <br>
