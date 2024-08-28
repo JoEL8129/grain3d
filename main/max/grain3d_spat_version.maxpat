@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1315.0, 84.0, 1210.0, 1273.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -224,7 +224,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2289.230987548828125, 1233.077040672302246, 100.0, 51.0 ],
+					"patching_rect" : [ 2289.230987548828125, 1233.077040672302246, 100.0, 50.0 ],
 					"text" : "load built-in IRC_1040 data",
 					"textjustification" : 1
 				}
@@ -251,7 +251,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2149.230974197387695, 1410.769365310668945, 91.5, 53.0 ],
+					"patching_rect" : [ 2149.230974197387695, 1410.769365310668945, 91.5, 52.0 ],
 					"text" : "load a set of HRTF",
 					"textjustification" : 1
 				}
@@ -266,7 +266,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2358.461763381958008, 1410.769365310668945, 93.0, 53.0 ],
+					"patching_rect" : [ 2358.461763381958008, 1410.769365310668945, 93.0, 52.0 ],
 					"text" : "post info to the Max console",
 					"textjustification" : 1
 				}
@@ -320,7 +320,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2256.154061317443848, 1410.769365310668945, 93.0, 67.0 ],
+					"patching_rect" : [ 2256.154061317443848, 1410.769365310668945, 93.0, 66.0 ],
 					"text" : "open dialog for choosing a SOFA file",
 					"textjustification" : 1
 				}
@@ -349,7 +349,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2190.000208854675293, 1221.538578033447266, 100.0, 63.0 ],
+					"patching_rect" : [ 2190.000208854675293, 1221.538578033447266, 100.0, 62.0 ],
 					"text" : "load HRTF from default built-in kemar filters",
 					"textjustification" : 1
 				}
@@ -403,8 +403,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1283,7 +1283,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2170.769437789916992, 1143.84626293182373, 100.0, 51.0 ],
+					"patching_rect" : [ 2170.769437789916992, 1143.84626293182373, 100.0, 50.0 ],
 					"text" : "double-click to open the window",
 					"textjustification" : 1
 				}
@@ -2067,7 +2067,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2880.0, 888.0, 61.0, 46.0 ],
+					"patching_rect" : [ 2880.0, 888.0, 61.0, 45.0 ],
 					"text" : "/source/5/xyz $1 $2 $3"
 				}
 
@@ -2094,7 +2094,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2808.0, 888.0, 59.0, 46.0 ],
+					"patching_rect" : [ 2808.0, 888.0, 59.0, 45.0 ],
 					"text" : "/source/4/xyz $1 $2 $3"
 				}
 
@@ -2121,7 +2121,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2733.0, 888.0, 59.038731157779694, 46.0 ],
+					"patching_rect" : [ 2733.0, 888.0, 59.038731157779694, 45.0 ],
 					"text" : "/source/3/xyz $1 $2 $3"
 				}
 
@@ -2148,7 +2148,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2655.0, 882.0, 62.0, 46.0 ],
+					"patching_rect" : [ 2655.0, 882.0, 62.0, 45.0 ],
 					"text" : "/source/2/xyz $1 $2 $3"
 				}
 
@@ -2187,7 +2187,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2573.0, 882.0, 61.0, 46.0 ],
+					"patching_rect" : [ 2573.0, 882.0, 61.0, 45.0 ],
 					"text" : "/source/1/xyz $1 $2 $3"
 				}
 
@@ -2200,7 +2200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 31,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "FullPacket" ],
-					"patching_rect" : [ 3358.035682260990143, 682.978718519210815, 239.285712003707886, 50.0 ],
+					"patching_rect" : [ 3358.035682260990143, 682.978718519210815, 239.285712003707886, 49.0 ],
 					"text" : "o.route /1 /2 /3 /4 /5 /6 /7 /8 /9 /10 /11 /12 /13 /14 /15 /16 /17 /18 /19 /20 /21 /22 /23 /24 /25 /26 /27 /28 /29 /30"
 				}
 
@@ -2213,7 +2213,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 31,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "FullPacket" ],
-					"patching_rect" : [ 3094.64282763004303, 682.978718519210815, 250.892854750156403, 50.0 ],
+					"patching_rect" : [ 3094.64282763004303, 682.978718519210815, 250.892854750156403, 49.0 ],
 					"text" : "o.route /1 /2 /3 /4 /5 /6 /7 /8 /9 /10 /11 /12 /13 /14 /15 /16 /17 /18 /19 /20 /21 /22 /23 /24 /25 /26 /27 /28 /29 /30"
 				}
 
@@ -2226,7 +2226,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 31,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "FullPacket" ],
-					"patching_rect" : [ 2859.574447631835938, 682.978718519210815, 229.464283525943756, 50.0 ],
+					"patching_rect" : [ 2859.574447631835938, 682.978718519210815, 229.464283525943756, 49.0 ],
 					"text" : "o.route /1 /2 /3 /4 /5 /6 /7 /8 /9 /10 /11 /12 /13 /14 /15 /16 /17 /18 /19 /20 /21 /22 /23 /24 /25 /26 /27 /28 /29 /30"
 				}
 
@@ -2266,8 +2266,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2511,8 +2511,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2756,8 +2756,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3001,8 +3001,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3246,8 +3246,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3491,8 +3491,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3736,8 +3736,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3981,8 +3981,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4226,8 +4226,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4471,8 +4471,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4716,8 +4716,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4961,8 +4961,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5206,8 +5206,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5451,8 +5451,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5696,8 +5696,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5941,8 +5941,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6186,8 +6186,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6431,8 +6431,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6676,8 +6676,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6921,8 +6921,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7166,8 +7166,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7411,8 +7411,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7656,8 +7656,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7901,8 +7901,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8146,8 +8146,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8391,8 +8391,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8656,8 +8656,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8865,8 +8865,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9074,8 +9074,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9283,8 +9283,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9609,7 +9609,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 790.0, 1216.0, 279.0, 66.0 ],
+					"patching_rect" : [ 790.0, 1216.0, 279.0, 64.0 ],
 					"text" : "You can also have a look at the \"MC Spatialization Guides\" and \"MC Multichannel Patchcords\" in the Max Reference Documentation (Max 8 or higher)"
 				}
 
@@ -9636,7 +9636,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 308.0, 1438.0, 230.0, 36.0 ],
+					"patching_rect" : [ 308.0, 1438.0, 230.0, 35.0 ],
 					"text" : "bang here to see how many channels are actually transmitted"
 				}
 
@@ -9688,7 +9688,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 414.0, 1216.0, 360.0, 203.0 ],
+					"patching_rect" : [ 414.0, 1216.0, 360.0, 198.0 ],
 					"text" : "Multichannel patchcords are a feature of Max 8 (or higher).\nThis is not compatible in Max 6 or 7.\n\nAll spat5 DSP objects support \"@mc 1\" attribute. MC provides a very convenient and flexible wiring/patching style.\nHowever, it is not (yet) possible to dynamically change the number of input/output channels. \nThe actual number of channels is governed by the @inputs and @outputs attributes, which cannot be modified via messages (or attrui or inspector).\n\nNote also that @mc attribute cannot be modified dynamically. The attribute has to be typed directly in the object box, and will remain unchanged for the lifetime of the object.",
 					"textjustification" : 1
 				}
@@ -9746,7 +9746,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 492.0, 1101.0, 154.25, 89.0 ],
+					"patching_rect" : [ 492.0, 1101.0, 154.25, 87.0 ],
 					"text" : "use \"@mc 1\" attribute in order to enable multichannel (mc) patchcords.\n\nBy default mc is disabled.",
 					"textjustification" : 1
 				}
@@ -9762,7 +9762,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 252.0, 1121.0, 172.75, 48.0 ],
+					"patching_rect" : [ 252.0, 1121.0, 172.75, 47.0 ],
 					"text" : "hover the mouse over the patchcord to show how many channels are conveyed"
 				}
 
@@ -10261,7 +10261,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1221.576329112052917, 587.615402221679688, 101.0, 36.0 ],
+					"patching_rect" : [ 1221.576329112052917, 587.615402221679688, 101.0, 35.0 ],
 					"text" : "mc.sig~ @chans 30"
 				}
 
@@ -10296,7 +10296,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1221.576329112052917, 469.218581855297089, 86.0, 22.0 ],
 					"text" : "random 10000"
 				}
